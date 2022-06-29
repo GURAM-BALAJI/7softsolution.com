@@ -73,6 +73,14 @@
                             <input type="date" class="form-control" name="customers_renewal_date" required>
                         </div>
                     </div>
+
+                    <div class="form-group">
+                        <label for="customers_renewal_cost" class="col-sm-4 control-label">Renewal Cost</label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" name="customers_renewal_cost" required>
+                        </div>
+                    </div>
+                    
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Close</button>
@@ -159,6 +167,13 @@
                         <label for="customers_renewal_date" class="col-sm-4 control-label">Renewal Date</label>
                         <div class="col-sm-8">
                             <input type="date" class="form-control" id="edit_customers_renewal_date" name="customers_renewal_date">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customers_renewal_cost" class="col-sm-4 control-label">Renewal Cost</label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control"  id="edit_customers_renewal_cost"  name="customers_renewal_cost" required>
                         </div>
                     </div>
 

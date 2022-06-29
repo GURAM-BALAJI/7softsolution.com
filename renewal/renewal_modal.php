@@ -9,7 +9,7 @@
                 <h4 class="modal-title"><b>Renewal Customer</b></h4>
             </div>
             <div class="modal-body">
-                <form class="form-horizontal" method="POST" action="customers_edit.php">
+                <form class="form-horizontal" method="POST" action="renewal_edit.php">
                     <input type="hidden" id="edit_customers_id" name="id">
 
 
@@ -42,6 +42,13 @@
                         </div>
                     </div>
 
+                    <div class="form-group">
+                        <label for="customers_renewal_cost" class="col-sm-4 control-label">Renewed Cost</label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" id="edit_customers_renewal_cost" name="customers_renewal_cost">
+                        </div>
+                    </div>
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Close</button>
@@ -63,7 +70,7 @@
                 <h4 class="modal-title"><b>Deleting...</b></h4>
             </div>
             <div class="modal-body">
-                <form class="form-horizontal" method="POST" action="customers_delete.php">
+                <form class="form-horizontal" method="POST" action="renwal_delete.php">
                     <input type="hidden" class="delete_customers_id" name="id">
                     <div class="text-center">
                         <h3>DELETE CUSTOMER</h3>
