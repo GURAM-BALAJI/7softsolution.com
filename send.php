@@ -6,11 +6,12 @@ use PHPMailer\PHPMailer\PHPMailer;
 		$email = $_POST['email'];
 		$msg = $_POST['message'];
 		$phone=$_POST['phone'];
+		$subject=$_POST['subject'];
 		
 
             try{
 
-        $message = "<center><h1>NAME: </h1><h2>$name</h2><br><br><h1>PHONE: </h1><h2>$phone</h2><br><br><h1>Email: </h1><h2>$email</h2><br><br><h1>Message: </h1><h2>$msg</h2><br><br></center>";
+        $message = "<center><h1>SUBJECT: </h1><h2>$subject</h2><br><br><h1>NAME: </h1><h2>$name</h2><br><br><h1>PHONE: </h1><h2>$phone</h2><br><br><h1>Email: </h1><h2>$email</h2><br><br><h1>Message: </h1><h2>$msg</h2><br><br></center>";
         require_once "PHPMailer/PHPMailer.php";
         require_once "PHPMailer/SMTP.php";
         require_once "PHPMailer/Exception.php";
