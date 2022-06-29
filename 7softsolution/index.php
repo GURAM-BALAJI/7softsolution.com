@@ -10,8 +10,8 @@ if (isset($_SESSION['never_admin']))
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=0.70">
   <meta charset="utf-8">
-  <title>ROYALPUPIL INTERNATIONAL SCHOOL</title>
-  <link rel="icon" type="image/x-icon" href="./images/favicon.jpeg">
+  <title>7 Soft Solution</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.jpg">
   <link rel='stylesheet' href='./loginscripts/index-bootstrap.min.css'>
   <link rel="stylesheet" href="./loginscripts/style.css">
 </head>
@@ -21,7 +21,7 @@ if (isset($_SESSION['never_admin']))
     <div class="container">
       <div id="login-box">
         <div class="logo">
-          <img src="./login.jpeg" class="img img-responsive img-circle center-block" />
+          <img src="./login.jpg" class="img img-responsive img-circle center-block" />
           <h1 class="logo-caption"><span class="tweak">L</span>og<span class="tweak">i</span>n</h1>
         </div><!-- /.logo -->
         <div class="controls">
