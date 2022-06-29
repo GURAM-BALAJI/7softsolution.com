@@ -5,11 +5,12 @@ use PHPMailer\PHPMailer\PHPMailer;
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$msg = $_POST['message'];
+		$phone=$_POST['phone'];
 		
 
             try{
 
-        $message = "<center><h1>NAME: </h1><h2>$name</h2><br><br><h1>Email: </h1><h2>$email</h2><br><br><h1>Message: </h1><h2>$msg</h2><br><br></center>";
+        $message = "<center><h1>NAME: </h1><h2>$name</h2><br><br><h1>PHONE: </h1><h2>$phone</h2><br><br><h1>Email: </h1><h2>$email</h2><br><br><h1>Message: </h1><h2>$msg</h2><br><br></center>";
         require_once "PHPMailer/PHPMailer.php";
         require_once "PHPMailer/SMTP.php";
         require_once "PHPMailer/Exception.php";
@@ -29,14 +30,14 @@ use PHPMailer\PHPMailer\PHPMailer;
 				            )
 				        );                                                       
 
-				        $mail->setFrom('support@7softsolution.com','FORM SUBMIT');
+				        $mail->setFrom('support@7softsolution.com',$name);
 				        
 				        //Recipients
 				        $mail->addAddress('support@7softsolution.com');              
 				       
 				        //Content
 				        $mail->isHTML(true);                                            
-				        $mail->Subject = 'Password Reset Code';
+				        $mail->Subject = 'FORM SUBMITION';
 				        $mail->Body = $message;
 						$mail->send();
                         
