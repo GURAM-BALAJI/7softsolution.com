@@ -17,8 +17,8 @@
                 
 				if($row['admin_status']){
 					if(password_verify($password, $row['admin_password'])){
-                        $_SESSION['never_admin']='True';
-						$_SESSION['never_id_admin'] = $row['admin_id'];
+                        $_SESSION['7ss_admin']='True';
+						$_SESSION['7ss_id_admin'] = $row['admin_id'];
 					}
                     else{
 						$_SESSION['error'] = 'Incorrect details';
