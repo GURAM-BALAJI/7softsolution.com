@@ -49,6 +49,13 @@
                         </div>
                     </div>
 
+                    <div class="form-group">
+                        <label for="customers_remark" class="col-sm-4 control-label">Remark</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="edit_customers_remark" name="customers_remark" required>
+                        </div>
+                    </div>
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Close</button>
