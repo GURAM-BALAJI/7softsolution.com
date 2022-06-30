@@ -63,6 +63,7 @@
                                                 <th>PHONE</th>
                                                 <th>RENEWAL</th>
                                                 <th>COST</th>
+                                                <th>REMARK</th>
                                                 <th>TOOLS</th>
                                             </thead>
                                             <tbody>
@@ -78,6 +79,7 @@
                                                         echo "<td>" . $row['customers_phone1'] . "</td>";
                                                         echo "<td>" . $row['customers_renewal_date'] . "</td>";
                                                         echo "<td>" . $row['customers_renewal_cost'] . "</td>";
+                                                        echo "<td>" . $row['customers_remark'] . "</td>";
                                                         echo "<td>";
                                                         echo "<button class='btn btn-primary btn-sm view_more btn-flat' data-id='" . $row['customers_id'] . "'><i class='fa fa-chevron-circle-down'></i> More</button> ";
                                                         if ($admin['customers_edit'])
@@ -149,9 +151,10 @@
                         $('#edit_customers_phone2').val(response.customers_phone2);
                         $('#edit_customers_phone3').val(response.customers_phone3);
                         $('#edit_customers_email').val(response.customers_email);
-                        $('#edit_customers_address').html(response.customers_address);
+                        $('#edit_customers_address').val(response.customers_address);
                         $('#edit_customers_website').val(response.customers_website);
-                        $('#edit_customers_purpoes').html(response.customers_purpoes);
+                        $('#edit_customers_purpoes').val(response.customers_purpoes);
+                        $('#edit_customers_remark').val(response.customers_remark);
                         $('#edit_customers_renewal_date').val(response.customers_renewal_date);
                         $('#edit_customers_renewal_cost').val(response.customers_renewal_cost);
                     }

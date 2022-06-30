@@ -14,6 +14,7 @@ if ($req_per == 1) {
 		$customers_purpoes = strtoupper($_POST['customers_purpoes']);
 		$customers_renewal_date = $_POST['customers_renewal_date'];
 		$customers_renewal_cost = $_POST['customers_renewal_cost'];
+		$customers_remark = strtoupper($_POST['customers_remark']);
 		try {
 			date_default_timezone_set('Asia/Kolkata');
 			$today = date('d-m-Y h:i:s a');
@@ -28,6 +29,7 @@ if ($req_per == 1) {
 			customers_purpoes=:customers_purpoes,
 			customers_renewal_date=:customers_renewal_date,
 			customers_renewal_cost=:customers_renewal_cost,
+			customers_remark=:customers_remark,
 			customers_updated_date=:customers_updated_date WHERE customers_id=:id");
 			$stmt->execute([
 				'customers_name' => $name,
@@ -40,6 +42,7 @@ if ($req_per == 1) {
 				'customers_purpoes' => $customers_purpoes,
 				'customers_renewal_date' => $customers_renewal_date,
 				'customers_renewal_cost' => $customers_renewal_cost,
+				'customers_remark'=>$customers_remark,
 				'customers_updated_date' => $today,
 				'id' => $id
 			]);

@@ -80,6 +80,12 @@
                             <input type="number" class="form-control" name="customers_renewal_cost" required>
                         </div>
                     </div>
+                    <div class="form-group">
+                        <label for="customers_remark" class="col-sm-4 control-label">Remark</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" name="customers_remark" required>
+                        </div>
+                    </div>
                     
             </div>
             <div class="modal-footer">
@@ -174,6 +180,13 @@
                         <label for="customers_renewal_cost" class="col-sm-4 control-label">Renewal Cost</label>
                         <div class="col-sm-8">
                             <input type="number" class="form-control"  id="edit_customers_renewal_cost"  name="customers_renewal_cost" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customers_remark" class="col-sm-4 control-label">Remark</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="edit_customers_remark" name="customers_remark" required>
                         </div>
                     </div>
 
