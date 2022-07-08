@@ -71,6 +71,17 @@
                      <td> </td>
                 </tr>
                
+                <tr>
+                    <td> </td>
+                    <td> Call Logs </td>
+                    <td style="text-align: center;"> <input type="checkbox" name="call_logs_view" <?php if ($row['call_logs_view']) echo "checked"; ?>> </td>
+                    <td style="text-align: center;"> <input type="checkbox" name="call_logs_create" <?php if ($row['call_logs_create']) echo "checked"; ?>> </td>
+                    <td style="text-align: center;"> <input type="checkbox" name="call_logs_edit" <?php if ($row['call_logs_edit']) echo "checked"; ?>> </td>
+                    <td style="text-align: center;"> <input type="checkbox" name="call_logs_del" <?php if ($row['call_logs_del']) echo "checked"; ?>> </td>
+                    <td style="text-align: center;"> <input type="checkbox" name="call_logs_special" <?php if ($row['call_logs_special']) echo "checked"; ?>> </td>
+                    <td> </td>
+                </tr>
+                
             </table>
         <?php } ?>
         <div class="modal-footer">

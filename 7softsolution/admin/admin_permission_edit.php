@@ -42,11 +42,27 @@ if ($req_per == 1) {
         else
             $admin_special = 0;
 
+            if (isset($_POST['call_logs_view']))
+            $call_logs_view = 1;
+        else
+            $call_logs_view = 0;
+        if (isset($_POST['call_logs_create']))
+            $call_logs_create = 1;
+        else
+            $call_logs_create = 0;
+        if (isset($_POST['call_logs_edit']))
+            $call_logs_edit = 1;
+        else
+            $call_logs_edit = 0;
+        if (isset($_POST['call_logs_del']))
+            $call_logs_del = 1;
+        else
+            $call_logs_del = 0;
        
         $conn = $pdo->open();
         try {
-            $stmt = $conn->prepare("UPDATE admin SET admin_special=:admin_special,customers_view=:customers_view,customers_create=:customers_create,customers_edit=:customers_edit,customers_del=:customers_del,admin_view=:admin_view,admin_create=:admin_create,admin_edit=:admin_edit,admin_del=:admin_del WHERE admin_id=:id");
-            $stmt->execute(['admin_special' => $admin_special, 'customers_view' => $customers_view, 'customers_create' => $customers_create, 'customers_edit' => $customers_edit, 'customers_del' => $customers_del, 'admin_view' => $admin_view, 'admin_create' => $admin_create, 'admin_edit' => $admin_edit, 'admin_del' => $admin_del, 'id' => $id]);
+            $stmt = $conn->prepare("UPDATE admin SET admin_special=:admin_special,customers_view=:customers_view,customers_create=:customers_create,customers_edit=:customers_edit,customers_del=:customers_del,admin_view=:admin_view,admin_create=:admin_create,admin_edit=:admin_edit,admin_del=:admin_del,call_logs_view=:call_logs_view,call_logs_create=:call_logs_create,call_logs_edit=:call_logs_edit,call_logs_del=:call_logs_del,call_logs_special=:call_logs_special WHERE admin_id=:id");
+            $stmt->execute(['admin_special' => $admin_special, 'customers_view' => $customers_view, 'customers_create' => $customers_create, 'customers_edit' => $customers_edit, 'customers_del' => $customers_del, 'admin_view' => $admin_view, 'admin_create' => $admin_create, 'admin_edit' => $admin_edit, 'admin_del' => $admin_del,'call_logs_view' => $call_logs_view, 'call_logs_create' => $call_logs_create, 'call_logs_edit' => $call_logs_edit, 'call_logs_del' => $call_logs_del, 'call_logs_special' => $call_logs_special, 'id' => $id]);
             $_SESSION['success'] = 'Admin Permission Updated Successfully';
         } catch (PDOException $e) {
             $_SESSION['error'] = $e->getMessage();

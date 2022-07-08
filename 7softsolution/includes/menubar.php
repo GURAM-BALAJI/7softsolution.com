@@ -13,27 +13,30 @@
     </div>
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu" data-widget="tree">
-      <li><a href="../home/"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+      <li><a href="../home/index.php"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
       
       <?php
       if ($admin['customers_view'] || $admin['renewal_view']) { ?>
         <li class="header">MANAGE</li>
         <?php
         if ($admin['renewal_view']) { ?>
-          <li><a href="../renewal/"><i class="fa fa-refresh"></i> <span>Renewal</span></a></li>
+          <li><a href="../renewal/index.php"><i class="fa fa-refresh"></i> <span>Renewal</span></a></li>
         <?php } ?>
         <?php
         if ($admin['customers_view']) { ?>
-          <li><a href="../customers/"><i class="fa fa-cubes"></i> <span>Customers</span></a></li>
+          <li><a href="../customers/index.php"><i class="fa fa-cubes"></i> <span>Customers</span></a></li>
         <?php } ?>
-        
+        <?php
+        if ($admin['call_logs_view']) { ?>
+          <li><a href="../call_logs/index.php"><i class="fa fa-phone"></i> <span>Call Logs</span></a></li>
+        <?php } ?>
       <?php } ?>
       <?php
       if ($admin['admin_view']) { ?>
         <li class="header">LOGIN'S</li>
         <?php
         if ($admin['admin_view']) { ?>
-          <li><a href="../admin/"><i class="fa fa-grav"></i> <span>Admin</span></a></li>
+          <li><a href="../admin/index.php"><i class="fa fa-grav"></i> <span>Admin</span></a></li>
         <?php } ?>
       <?php } ?>
     </ul>
