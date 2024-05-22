@@ -56,11 +56,6 @@ CREATE TABLE `admin` (
 
 --
 -- Dumping data for table `admin`
---
-
-INSERT INTO `admin` (`admin_id`, `admin_email`, `admin_password`, `admin_name`, `admin_phone`, `admin_photo`, `admin_status`, `customers_view`, `customers_create`, `customers_edit`, `customers_del`, `admin_view`, `admin_create`, `admin_edit`, `admin_del`, `renewal_view`, `renewal_edit`, `renewal_del`, `admin_special`, `admin_delete`, `admin_added_date`, `admin_updated_date`, `admin_req`) VALUES
-(6, 'admin@admin.com', '$2y$10$IUHcsSNbUjp1W.9wG76dZ.YI.wXYIhOWzgwf.hun/0Xp2gGgiUjWC', 'ADMIN', 9845138636, '2022-06-26_1656253258.jpeg', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, '18-11-2021 11:13:30 pm', '2022-06-29 06:37:41', 0);
-
 -- --------------------------------------------------------
 
 --
@@ -88,10 +83,6 @@ CREATE TABLE `customers` (
 -- Dumping data for table `customers`
 --
 
-INSERT INTO `customers` (`customers_id`, `customers_name`, `customers_phone1`, `customers_phone2`, `customers_phone3`, `customers_email`, `customers_address`, `customers_website`, `customers_purpoes`, `customers_renewal_date`, `customers_renewal_cost`, `customers_updated_date`, `customers_added_date`, `customers_deleted`) VALUES
-(1, 'BEEMA LINGA REDDY ', 9845138636, 9480489827, 0, 'royalpupilinternationalschool@gmail.com', 'KUDUTHINI 583115\r\n', 'royalpupilinternationalschool.com', 'SCHOOL FEE MANAGEMENT\r\n', '2023-06-25', 10000, '29-06-2022 12:07:41 ', '28-06-2022 11:48:58 ', 0);
-
---
 -- Indexes for dumped tables
 --
 
