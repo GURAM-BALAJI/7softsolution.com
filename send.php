@@ -21,7 +21,7 @@ use PHPMailer\PHPMailer\PHPMailer;
         $mail->Host = "smtp.hostinger.com";
         $mail->SMTPAuth = true;
         $mail->Username = "support@7softsolution.com"; //enter you email address
-        $mail->Password = '@7softBALAJIsolution'; //enter you email password
+        $mail->Password = '@Password'; //enter you email password
         $mail->Port = 587;
 				        $mail->SMTPOptions = array(
 				            'ssl' => array(
